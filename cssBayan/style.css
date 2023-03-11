@@ -14,34 +14,71 @@ header{
     justify-content: center;
     align-items: center;
     margin: 3rem 0rem 3rem 0rem;
-    font-family: "Times New Roman";
+    font-family: Verdana, sans-serif;
     font-size: 2rem;
 }
-
-.accordion-container{
+.wrapper {
     display: flex;
     flex-direction: column;
 }
+
+.accordion-container {
+    margin: 0 auto;
+}
+.accordion-container .acor-body {
+    width: 100%;
+    height: 0;
+    line-height: 18px;
+    padding: 0 30px;
+    transition: color 1.5s, padding 1s;
+    overflow: hidden;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+
+}
+
+.accordion-container label {
+    cursor: pointer;
+    background-color: #fff;
+    color: cornflowerblue;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    font-family: Verdana, sans-serif;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.accordion-container label:hover {
+    color: #000000;
+}
+.accordion-container input{
+    display: none;
+}
+.accordion-container label:before {
+
+    /*content: '\276F';*/
+    /*float: right;*/
+}
+
+
+.accordion-container input:checked + label + .acor-body {
+    height: auto;
+    color: #000000;
+    padding: 20px 30px 10px;
+    transition: 1s;
+}
+
 .article{
     display: flex;
     justify-content: center;
+    margin: 1rem 0rem 1rem 0rem;
 }
-.article b{
-    cursor: pointer;
-    margin-top: 1rem;
 
-}
 .tab-close {
     background: url("img/x.svg") no-repeat;
     width: 1rem;
     height: 1rem;
-    margin-left: 15rem  ;
 }
 .tab-close:hover{
     cursor: pointer;
-}
-.accordion-img{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
 }
