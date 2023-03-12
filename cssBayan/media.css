@@ -1,19 +1,33 @@
 @media screen and (max-width: 1260px) {
 
-
     header{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+    img {
+        width: 350px;
     }
     .accordion-container .acor-body {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .accordion-container label {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
 }
 @media screen and (max-width: 690px) {
 
+    header{
+        font-size: 0.8rem;
+    }
+    img {
+        width: 250px;
+    }
+    .accordion-container .acor-body {
+        font-size: 0.8rem;
+    }
+    .accordion-container label {
+        font-size: 0.8rem;
+    }
 
 }
