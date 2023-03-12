@@ -1,0 +1,19 @@
+@media screen and (max-width: 1260px) {
+
+
+    header{
+        font-size: 1.5rem;
+    }
+    .accordion-container .acor-body {
+        font-size: 1rem;
+    }
+
+    .accordion-container label {
+        font-size: 1.6rem;
+    }
+
+}
+@media screen and (max-width: 690px) {
+
+
+}
